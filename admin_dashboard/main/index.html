@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin Dashbord</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+	<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+	ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+</head>
+<body>
+	<input type="checkbox" id="menu" name="">
+	<div class="sidebar">
+		<div class="sidebar-brand">
+			<h2><span class="fa fa-user-o"></span>Learn Programming</h2>
+		</div>
+
+		<div class="sidebar-menu">
+			<ul>
+				<li>
+					<a href="" class="active"><span class="fa fa-home"></span><span>Welcome</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-tasks"></span><span>Taches</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-th-large"></span><span>Blog</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-line-chart"></span><span>Statistical</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-address-book"></span><span>A-propos</span></a>
+				</li>
+				<li>
+					<a href=""><span class="fa fa-clipboard"></span><span>Projets</span></a>
+				</li>
+				<li>
+					<a href=""><i class="fa-solid fa-money-bill-1-wave"></i><span>Balance</span></a>
+				</li>
+				<li>
+					<a href="../registration/Registration.html"><span class="fa fa-registered"></span><span>Registration</span></a>
+				</li>
+
+				<li>
+					<a href=""><span class="fa fa-user"></span><span>Contacts</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<header>
+			<p><label for="menu"><span class="fa fa-bars"></span></label><span class="accueil">Welcome</span></p>
+
+			<div class="search-wrapper">
+				<span class="fa fa-search"></span>
+				<input type="search" name="" placeholder="research" />
+			</div>
+
+			<div class="user-wrapper" id="dropdown">
+				<div>
+					<h4>Shreemay</h4>
+					<small>Admin</small>
+				</div>
+				<i class="fa-solid fa-user fa-bounce"></i>
+				<!-- <img src="../admin_dashboard/images/pp.jpg" width="30" height="30" class="logo-admin"> -->
+				<div class="dropdown-content">
+				<p>My profile</p>
+				<p><a href="../login/login.html">sign out</a></p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="cards">
+				<div class="card-single">
+					<div>
+						<h2>2.000.000</h2>
+						<small>Sales</small>
+					</div>
+					<div>
+						<i class="fa-solid fa-cart-shopping" style="color: #FFD43B;"></i>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h2>+30</h2>
+						<small>Stock</small>
+					</div>
+					<div>
+						<i class="fa-solid fa-newspaper" style="color: #FFD43B;"></i>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h2>58</h2>
+						<small>Supplier</small>
+					</div>
+					<div>
+						<i class="fa-solid fa-outdent" style="color: #FFD43B;"></i>
+					</div>
+				</div>
+				<div class="card-single">
+					<div>
+						<h2>20k</h2>
+						<small>Community</small>
+					</div>
+					<div>
+						<i class="fa-solid fa-people-group" style="color: #FFD43B;"></i>
+					</div>
+				</div>
+			</div>
+			<div class="composant">
+				<div class="ventes">
+					<div class="case">
+						<div class="header-case">
+							<h2>Product lists</h2>
+							<button class="button">see more<span class="fa fa-arrow-right"></span></button>
+						</div>
+						<div class="body-case">
+							<div class="tableau">
+								<table width="100%">
+								  <thead>
+								    <tr>
+								      <td>First</td>
+								      <td>Last</td>
+								      <td>Handle</td>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td>Mark</td>
+								      <td>Otto</td>
+								      <td><span class="status-produit color-one"></span>@mdo</td>
+								    </tr>
+								    <tr>
+								      <td>Jacob</td>
+								      <td>Thornton</td>
+								      <td><span class="status-produit color-two"></span>@fat</td>
+								    </tr>
+								    <tr>
+								      <td>Larry the Bird</td>
+								      <td>@twitter</td>
+								      <td><span class="status-produit color-three"></span>@twitter</td>
+								    </tr>
+								     <tr>
+								      <td>Larry the Bird</td>
+								      <td>@twitter</td>
+								      <td><span class="status-produit color-four"></span>@twitter</td>
+								    </tr>
+								     <tr>
+								      <td>Larry the Bird</td>
+								      <td>@twitter</td>
+								      <td><span class="status-produit color-five"></span>@twitter</td>
+								    </tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="stock">
+					<div class="case">
+						<div class="header-case">
+							<h1>Loyal Customers</h1>
+						</div>
+						<div class="body-case">
+							<div class="all-users">
+								<div class="infos">
+								<!-- <img src="../admin_dashboard/images/pp.jpg" width="30" height="30"> -->
+								 <i class="fa-solid fa-user fa-shake" width="30" height="30"></i>
+									<div>
+									<h4>Omar</h4>
+									<small>Embulant</small>
+								</div>
+								</div>
+								<div class="user-contact">
+									<i class="fa-brands fa-facebook" style="color: #74C0FC;"></i>
+									<i class="fa-brands fa-whatsapp" style="color: #00ff59;"></i>
+									<i class="fa-solid fa-phone" style="color: #005eff;"></i>
+								</div>
+						</div>
+								<div class="all-users">
+								<div class="infos">
+								<!-- <img src="../admin_dashboard/images/pp.jpg" width="30" height="30"> -->
+								 <i class="fa-solid fa-user fa-shake" width="30" height="30"></i>
+									<div>
+									<h4>Omar</h4>
+									<small>Embulant</small>
+								</div>
+								</div>
+								<div class="user-contact">
+									<i class="fa-brands fa-facebook" style="color: #74C0FC;"></i>
+									<i class="fa-brands fa-whatsapp" style="color: #00ff59;"></i>
+									<i class="fa-solid fa-phone" style="color: #005eff;"></i>
+								</div>
+						</div>
+								<div class="all-users">
+								<div class="infos">
+								<!-- <img src="../admin_dashboard/images/pp.jpg" width="30" height="30"> -->
+								 <i class="fa-solid fa-user fa-shake" width="30" height="30"></i>
+									<div>
+									<h4>Omar</h4>
+									<small>Embulant</small>
+								</div>
+								</div>							
+								<div class="user-contact">
+									<i class="fa-brands fa-facebook" style="color: #74C0FC;"></i>
+									<i class="fa-brands fa-whatsapp" style="color: #00ff59;"></i>
+									<i class="fa-solid fa-phone" style="color: #005eff;"></i>
+								</div>
+						</div>	
+							<div class="all-users">
+								<div class="infos">
+								<!-- <img src="../admin_dashboard/images/pp.jpg" width="30" height="30"> -->
+								 <i class="fa-solid fa-user fa-shake" width="30" height="30"></i>
+									<div>
+									<h4>Omar</h4>
+									<small>Embulant</small>
+								</div>
+								</div>								
+								<div class="user-contact">
+									<i class="fa-brands fa-facebook" style="color: #74C0FC;"></i>
+									<i class="fa-brands fa-whatsapp" style="color: #00ff59;"></i>
+									<i class="fa-solid fa-phone" style="color: #005eff;"></i>
+								</div>
+						</div>
+						</div>
+						<button class="btn">voir plus<span class="fa fa-arrow-right"></span></button>
+					</div>
+				</div>				
+				<div class="statistique">
+					<div class="card-1">
+                        <h4 class="chart-lbl">
+                            Mixed Chart
+                        </h4>
+                        <div class="divider">
+                        </div>
+                        <div class="mixed-chart-container">
+                            <canvas class="mixed-chart" id="mixed">
+                            </canvas>
+                        </div>
+			</div>
+					</div>
+				</div>
+			</div>
+			<div class="calendar">
+				<div class="mois-annee">
+				  <ul>
+					<li class="prev">&#10094;</li>
+					<li class="next">&#10095;</li>
+					<li>August<br><span>2024</span></li>
+				  </ul>
+				</div>
+				<ul class="mois">
+				  <li>Mo</li>
+				  <li>Tu</li>
+				  <li>We</li>
+				  <li>Th</li>
+				  <li>Fr</li>
+				  <li>Sa</li>
+				  <li>Su</li>
+				</ul>	
+				<ul class="jours">
+				  <li>1</li>
+				  <li>2</li>
+				  <li>3</li>
+				  <li>4</li>
+				  <li>5</li>
+				  <li>6</li>
+				  <li>7</li>
+				  <li>8</li>
+				  <li>9</li>
+				  <li>10</li>
+				  <li>11</li>
+				  <li>12</li>
+				  <li>13</li>
+				  <li>14</li>
+				  <li>15</li>
+				  <li>16</li>
+				  <li>17</li>
+				  <li>18</li>
+				  <li>19</li>
+				  <li>20</li>
+				  <li>21</li>
+				  <li>22</li>
+				  <li>23</li>
+				  <li>24</li>
+				  <li>25</li>
+				  <li>26</li>
+				  <li>27</li>
+				  <li><span class="active">28</span></li>
+				  <li>29</li>
+				  <li>30</li>
+					<li>31</li>
+				</ul>
+				</div>
+			</main>
+		</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
+        </script>
+    <script src="script.js"></script>
+</body>
+</html>

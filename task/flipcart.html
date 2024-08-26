@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .flipcart {
+      position: relative;
+    }
+    .main1 {
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+      position: absolute;
+      left: 550px;
+    }
+    .main1 img {
+      height: 350px;
+    }
+
+    #shree2,
+    #shree3 {
+      display: none;
+    }
+    .main {
+      left: 500px;
+      top: 0;
+      position: absolute;
+    }
+    .main img {
+      height: 50px;
+      display: flex;
+    }
+  </style>
+  <body>
+    <div class="flipcart">
+        <div class="main">
+            <img id="shree4" src="../image/3.jpg" alt="" />
+            <img id="shree5" src="../image/4.jpg" alt="" />
+            <img id="shree6" src="../image/5.jpg" alt="" />
+          </div>
+        </div>
+      <div class="main1">
+        <img id="shree1" src="../image/3.jpg" alt="" />
+        <img id="shree2" src="../image/4.jpg" alt="" />
+        <img id="shree3" src="../image/5.jpg" alt="" />
+      </div>
+    <script>
+      $(document).ready(function () {
+        $("#shree5").click(function () {
+          $("#shree2").css({
+            display: "block",
+          });
+          $("#shree1").css({
+            display: "none",
+          });
+          $("#shree3").css({
+            display: "none",
+          });
+        });
+        $("#shree6").click(function () {
+          $("#shree3").css({
+            display: "block",
+          });
+          $("#shree1").css({
+            display: "none",
+          });
+          $("#shree2").css({
+            display: "none",
+          });
+        });
+        $("#shree4").click(function () {
+          $("#shree1").css({
+            display: "block",
+          });
+          $("shree2").css({
+            display: "none",
+          });
+          $("#shree3").css({
+            display: "none",
+          });
+          
+        });
+      });
+    </script>
+  </body>
+</html>
